@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:visibility="visible"
+    tools:context="com.example.rafal.activites.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/nazwaET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Wprowadz nazwe produktu"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/cenaET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="wprowadz cene produktu"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/iloscET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="wprowadz ilość planowanego zakupu"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/insertBT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                android:text="dodaj produkt do listy"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/showListBT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="pokaż liste zakupów" />
+
+            <Button
+                android:id="@+id/clearDataBT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="wyczyść liste produktów" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ustawienia Aplikacji" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/button3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:onClick="ustawsize"
+                        android:text="zwieksz rozmiar czcionki" />
+
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:onClick="ustawcolor"
+                        android:text="Zmień kolor tekstu w przyciskach" />
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Rafał Mikita"
+                android:ems="10"/>
+
+        </LinearLayout>
+    </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
